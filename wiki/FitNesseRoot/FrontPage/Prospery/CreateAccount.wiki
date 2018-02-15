@@ -1,0 +1,31 @@
+---
+Test
+---
+!define slim.port {0}
+
+!define TEST_SYSTEM {slim}
+
+
+|script                |browser test                                                |
+|seconds before timeout|60                                                          |
+|open                  |https://app-t.prospery.link/login                           |
+|click                 |Registrieren                                                |
+|select                |Herr                     |for|id=OnboardingRequest_Gender   |
+|select                |Dr.                      |for|id=OnboardingRequest_Title    |
+|enter                 |Inico                    |as |id=OnboardingRequest_FirstName|
+|wait milliseconds     |100                                                         |
+|enter                 |Veringa                  |as |id=OnboardingRequest_LastName |
+|enter                 |testinico1@mailinator.com|as |id=OnboardingRequest_Email    |
+|enter                 |Qwertyui1                |as |id=OnboardingRequest_Password |
+|wait milliseconds     |3000                                                        |
+|press                 |TAB                                                         |
+|press                 |SPACE                                                       |
+|press | TAB|
+|press | TAB|
+|press | TAB|
+|press                 |SPACE                                                       |
+|click|JETZT STARTEN|
+
+
+
+

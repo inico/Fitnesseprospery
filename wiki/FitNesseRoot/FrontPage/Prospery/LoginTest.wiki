@@ -1,0 +1,13 @@
+!define slim.port {0}
+
+!define TEST_SYSTEM {slim}
+
+
+|script                |browser test                     |
+|seconds before timeout|60                               |
+|open                  |https://app-t.prospery.link/login|
+|enter                 |Van Morrison   |as   |id=Email   |
+
+|script|selenium driver setup|
+|show  |run summary          |
+|stop driver                 |
